@@ -20,7 +20,7 @@ public class Data {
 
     public void resetPoints() {
         points = 0;
-    }eeee
+    }
 
     public void addPoints(int points) {
         this.points += points;

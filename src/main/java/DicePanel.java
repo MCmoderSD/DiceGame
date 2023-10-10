@@ -60,7 +60,7 @@ public class DicePanel extends JPanel {
 
     public DicePanel() {
         super();
-        diceArray = six;
+        diceArray = none;
     }
 
     public void setConfiguration(int parentWidth, int parentHeight) {
@@ -81,7 +81,8 @@ public class DicePanel extends JPanel {
         super.paintComponent(graphics);
         Graphics2D g = (Graphics2D) graphics;
         g.setColor(Color.BLACK);
-        g.drawRect(0, 0, getWidth(), getHeight());
+
+        if (diceArray != none) g.drawRect(0, 0, getWidth(), getHeight());
 
 
         // Left Row

@@ -1,3 +1,5 @@
+import java.util.Random;
+
 public class Controller {
     private final Data data;
     private final GUI gui;
@@ -6,8 +8,13 @@ public class Controller {
         data = new Data();
     }
 
+    private byte randomByte() {
+        Random random = new Random();
+        return (byte) (random.nextInt(6) + 1);
+    }
+
     public void rollButton() {
-        for (int i = 0; i < data.getDice().length; i++) data.setDice((byte) (Math.random() * 6 + 1));
+        for (int i = 0; i < data.getDice().length; i++) data.setDice(randomByte());
 
         boolean isSame = true;
 

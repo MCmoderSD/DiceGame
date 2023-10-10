@@ -39,7 +39,7 @@ public class GUI extends JFrame {
 
         pack();
 
-        pointsLabel = new JLabel("Points: ");
+        pointsLabel = new JLabel("Points: 0");
         pointsLabel.setSize(100, Math.toIntExact(Math.round(controlPanel.getHeight() * 0.25)));
         pointsLabel.setLocation(Math.toIntExact(Math.round((controlPanel.getWidth() - pointsLabel.getWidth()) * 0.5)),
                 Math.toIntExact(Math.round((controlPanel.getHeight() - pointsLabel.getHeight()) * 0.75)));
