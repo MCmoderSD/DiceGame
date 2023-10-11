@@ -69,4 +69,7 @@ public class GUI extends JFrame {
         for (int i = 0; i < data.getDice().length; i++) dicePanel[i].diceRolled(data.getDice(i));
     }
 
+    public void showMessage(String message, String type) {
+        JOptionPane.showMessageDialog(this, message, type, JOptionPane.INFORMATION_MESSAGE);
+    }
 }
