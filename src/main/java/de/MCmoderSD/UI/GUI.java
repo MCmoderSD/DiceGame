@@ -1,3 +1,8 @@
+package de.MCmoderSD.UI;
+
+import de.MCmoderSD.core.Controller;
+import de.MCmoderSD.data.Data;
+
 import javax.swing.*;
 import java.awt.*;
 

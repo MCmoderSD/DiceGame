@@ -1,3 +1,5 @@
+package de.MCmoderSD.UI;
+
 import javax.swing.*;
 import java.awt.*;
 
@@ -113,13 +115,27 @@ public class DicePanel extends JPanel {
     public void diceRolled(byte dice) {
         if (!isConfigured) throw new IllegalStateException("DicePanel is not configured");
         else switch (dice) {
-            case 1 : diceArray = one; break;
-            case 2 : diceArray = two; break;
-            case 3 : diceArray = three; break;
-            case 4 : diceArray = four; break;
-            case 5 : diceArray = five; break;
-            case 6 : diceArray = six; break;
-            default: diceArray = none; break;
+            case 1:
+                diceArray = one;
+                break;
+            case 2:
+                diceArray = two;
+                break;
+            case 3:
+                diceArray = three;
+                break;
+            case 4:
+                diceArray = four;
+                break;
+            case 5:
+                diceArray = five;
+                break;
+            case 6:
+                diceArray = six;
+                break;
+            default:
+                diceArray = none;
+                break;
         }
         repaint();
     }
